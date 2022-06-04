@@ -88,13 +88,13 @@ function setup()
 
    //btn 2
    button2 = createImg('cut_btn.png');
-   button2.position(330,35);
+   button2.position(canW/4,35);
    button2.size(60,60);
    button2.mouseClicked(drop2);
  
    //btn3
    button3 = createImg('cut_btn.png');
-   button3.position(360,200);
+   button3.position(canW/4 + 50,canH/3);
    button3.size(60,60);
    button3.mouseClicked(drop3);
 
@@ -104,8 +104,8 @@ function setup()
   mute_btn.mouseClicked(mute);
   
   rope = new Rope(8,{x:40,y:30});
-  rope2 = new Rope(7,{x:370,y:40});
-  rope3 = new Rope(4,{x:400,y:225});
+  rope2 = new Rope(7,{x:canW/4 + 25,y:40});
+  rope3 = new Rope(4,{x:canW/4 + 120,y:canH/3 + 20});
 
   ground = new Ground(canW/2,canH,canW,20);
   blink.frameDelay = 20;
